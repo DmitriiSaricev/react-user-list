@@ -15,11 +15,13 @@ const UserCard = ({ user, onClick }: UserCardProps) => {
         alt={`${user.name.first} ${user.name.last}`}
         className='h-16 w-16 rounded-full object-cover'
       />
-      <div>
+      <div className='min-w-0'>
         <p className='text-lg font-semibold text-gray-900 dark:text-white'>
           {user.name.first} {user.name.last}
         </p>
-        <p className='text-sm text-gray-600 dark:text-gray-400'>{user.email}</p>
+        <p className='text-sm text-gray-600 dark:text-gray-400 break-all whitespace-normal'>
+          {user.email}
+        </p>
       </div>
     </div>
   );
