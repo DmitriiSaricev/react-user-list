@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { User } from "@/types/user";
+import { User } from "../../types/user";
 
 // Hook to fetch users from Random User API
 export function useUsers() {

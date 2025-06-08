@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import UserCard from "./UserCard";
-import type { User } from "@/types/user";
+import type { User } from "../../types/user";
 import * as React from "react";
 
 const mockUser: User = {

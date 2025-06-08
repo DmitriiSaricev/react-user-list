@@ -1,5 +1,5 @@
 import '@styles/custom.css';
-import '@styles/tailwind.css';
+import '@styles/tailWind.css';
 
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -7,7 +7,13 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import React from 'react';
 
-createRoot(document.getElementById('root')).render(
+const rootElement = document.getElementById('root');
+
+if (!rootElement) {
+  throw new Error("Root element not found");
+}
+
+createRoot(rootElement).render(
   <StrictMode>
     <App />
   </StrictMode>
